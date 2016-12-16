@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/manjulacode/beltexam/issues"
   },
-  "homepage": "https://github.com/manjulacode/beltexam#readme"
+  "homepage": "https://github.com/manjulacode/beltexam#readme",
+  "dependencies": {
+    "bcryptjs": "^2.4.0",
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "jwt-simple": "^0.5.1",
+    "mongoose": "^4.7.2"
+  }
 }
