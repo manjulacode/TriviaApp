@@ -1,0 +1,25 @@
+<div ng-controller = "addQuestionController" >    
+ <div>
+    <a href="#!/home">Home</a>
+    <a href ng-click='addQuestion()'>Add a Question</a>
+    <a href ng-click='logout()'>Logout</a>
+  </div> 
+  
+<form  name="questionForm" >
+<!-- <md-content layout-padding> -->
+
+  <div>
+     <input  type="text" name="question" ng-model="list.question" ng-minlength="15"  required /> Question <p/>
+     <input  type="text" name="answer" ng-model="list.answer"   required /> Correct Answer <p/>
+      <input  type="text" name="fake1" ng-model="list.fake1"   required /> Fake Answer 1<p/>
+      <input  type="text" name="fake1" ng-model="list.fake2"  required /> Fake Answer 2<p/>
+  </div>
+  <div>
+   
+</div>
+
+    <button ng-click="cancel()"  type="button">Cancel</button>
+    <button ng-click="addQuestion()"  type="button">Add Question</button>
+</form>
+  
+</div>

@@ -1,0 +1,24 @@
+<div ng-controller = "playController"> 
+<h3>Hi {{name}}!</h3> <p />
+Choose an answer for each of the questions and submit the test once done.
+Good luck!
+<form name='playForm'>
+<ul ng-repeat='trivia in list'>
+	<li> {{$index + 1}} {{trivia.question}}</li>
+		
+        <label>
+            <input type="radio" ng-model="list.response[$index]"  value="{{trivia.answer}}" > {{trivia.answer}}
+        </label></p>
+        <label>
+            <input type="radio" ng-model="list.response[$index]" value="{{trivia.fake1}}" >{{trivia.fake1}}
+        </label></p>
+        <label>
+            <input type="radio" ng-model="list.response[$index]" value="{{trivia.fake2}}" >{{trivia.fake2}}
+        </label></p>
+	 </li>
+	
+</ul>
+<button ng-click="cancel()"  type="button">Cancel</button>
+    <button ng-click="submit()"  type="button">submit</button>
+</form>
+</div> 

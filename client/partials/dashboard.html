@@ -1,0 +1,26 @@
+<div ng-controller = "dashboardController"> 
+  <div>
+    <a href="#!/home">Home</a>
+    <a href ng-click='addQuestion()'>Add a Question</a>
+    <a href ng-click='logout()'>Logout</a>
+  </div> 
+ 
+ <div>
+  <button ng-click="play()"  type="button">Play</button><p />
+  <h2>Hi {{ name}} {{ message}}</h2>
+  <h3>Click the button above to start</h3>
+ </div>
+ <label>Search: <input ng-model="search.$"></label> <p />
+ <table >
+    <thead >
+     <th>Name</th>
+      <th>Score</th>
+      <th>percentage</th>
+    </thead>
+      <tr ng-repeat="score in list | filter:search:strict">
+        <td> {{score.name}}</td>
+        <td> {{score.score || 0}}/3</td>
+        <td> {{(((score.score / 3) * 100) | number:0) || 0}}%</td>
+      </tr>
+  </table> <p />
+</div>
