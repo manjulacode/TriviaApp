@@ -1,1 +1,1 @@
-# beltexam
+# TriviaApp
